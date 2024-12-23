@@ -1,4 +1,4 @@
-# MultiverseMercenaries
+# MultiverseMercenaries  
 Repository for Multiverse Mercenaries, a game by Matthew Diamond here is a link to where you can play the game! https://store.steampowered.com/app/2161190/Multiverse_Mercenaries/
 
 I've attached code examples that were integral to the project.
@@ -7,11 +7,15 @@ I've attached code examples that were integral to the project.
 
 **`CornerLevelGeneration.cs`**: Handles procedural level generation by creating a grid-based layout and generating a valid path between two developer-defined corner points using Dijkstra's algorithm. Each grid cell acts as a node in a graph, with costs determining pathfinding efficiency. The script dynamically places platforms, start and end points at strategic locations. Customizable parameters include grid dimensions, prefab size, and platform types. Platforms are instantiated based on their role (path, start, end, or generic platforms), and walls are conditionally enabled or disabled around each cell based on neighboring tiles. Player spawn placement is dynamically set at the start corner, allowing for flexible and repeatable level designs that enhance replayability in procedurally generated environments.
 
+**`Enemy.cs`**: Serves as the **base class** for enemy behaviors, defining core properties like **health, speed, damage, and poison effects**. Includes movement functionality, damage handling, poison application, and death effects. Supports visual effects for damage states and uses animation parameters for grounded status and velocity-based movement states. Can be extended to create specific enemy behaviors.
+
 **`EnemyGeneration.cs`**: Once a level is complete, this script fills out the level with enemies, which the player fights. 
 
 **`GrappleGun.cs`**: Manages the behavior of the grappling hook gun. Handles aiming, firing, and retracting the grappling hook, along with physics interactions via SpringJoint2D. Supports cooldowns, ammo management, and smooth gun rotation toward the target point. Includes features for launching the player towards the grapple point and adjusting distance constraints dynamically.
 
 **`GrappleRope.cs`**: Handles the visual representation and animation of the grappling hook's rope. Uses a LineRenderer to create dynamic rope effects, including wave animations during the rope's travel phase and a straightened appearance once the grapple is secured. Supports customizable parameters for animation curves, wave size, and rope progression speed, allowing smooth transitions and flexible visual behavior during grappling actions.
+
+**`Item.cs`**: Defines the behavior of **collectible items**, including their **cost, rarity, and duration**. Supports applying item effects to the player, removing them when necessary, and displaying item descriptions when the player is nearby. Includes functionality to disable item visuals after collection. **`OrbitalStrike.cs`**, **`WindItem.cs`**, and **`Textbook.cs`** are three examples of items.
 
 **`ItemDisplay.cs`**: Displays what items the player has in the UI.
 
