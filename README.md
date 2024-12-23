@@ -1,5 +1,5 @@
 # MultiverseMercenaries  
-Repository for Multiverse Mercenaries, a game by Matthew Diamond here is a link to where you can play the game! https://store.steampowered.com/app/2161190/Multiverse_Mercenaries/
+Repository for Multiverse Mercenaries, a game made in Unity by Matthew Diamond here is a link to where you can play the game! https://store.steampowered.com/app/2161190/Multiverse_Mercenaries/
 
 I've attached code examples that were integral to the project.
 
