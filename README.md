@@ -4,7 +4,7 @@ Repository for Multiverse Mercenaries, a game made in Unity using C# by Matthew 
 Here is a link to where you can play the game!  
 [**Multiverse Mercenaries On Steam**](https://store.steampowered.com/app/2161190/Multiverse_Mercenaries/)
 
-I've attached code examples that were integral to the project.
+I've attached code examples that were integral to the project. The code was written in 2021 and 2022.
 
 **`BullletScript.cs`**: Handles behavior for both enemy and player bullets. Applies modifiers from items like extra damage or changes in behavior like reflection.
 
